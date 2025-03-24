@@ -1,0 +1,213 @@
+body {
+  height: 100%;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #614fc9;
+  padding: 15px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container h1 {
+  font-size: 30px;
+}
+
+.container h4 {
+  font-size: 20px;
+}
+
+.allblogs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.allblogs div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.allblogs div:hover {
+  transform: scale(1.02);
+}
+
+.allblogs h4 {
+  color: #614fc9;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.allblogs p {
+  color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.singleblog {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.singleblog h1 {
+  color: #614fc9;
+  margin-bottom: 10px;
+}
+
+.singleblog h2 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.singleblog h3 {
+  color: #8974f9;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #614fc9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+button:hover {
+  background-color: #8974f9;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.updatebutton {
+  margin-right: 15px; 
+}
+
+
+form {
+  width: 100vw; 
+  height: 100vh; 
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  padding: 40px;
+}
+
+form label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+form button {
+  width: 50%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #614fc9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #8974f9;
+}
+
+.containerlanding{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+  background: linear-gradient(to bottom, #614fc9, #8974f9);
+  color: white;
+}
+
+.titlelanding {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+.textlanding{
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.buttonlanding {
+  background-color: white;
+  color: #614fc9;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.buttonlanding:hover{
+  background-color: #f4f4f9;
+  color: #5143b5;
+  transform: scale(1.05);
+}
+
