@@ -17,7 +17,7 @@ useEffect(()=>{
     fetchsingle()
 }, [])
 const deleteblog=async()=>{
-        const response = await fetch(`${BACKEND_URL}/api/blogs/${id}`,{
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
             method:'DELETE'
         }
         )
