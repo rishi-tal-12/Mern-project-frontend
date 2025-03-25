@@ -16,7 +16,7 @@ const Update=()=>{
         }
         const  blog ={title,content,author}
 
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
+        const response = await fetch(`https://mern-project-n3l6-8qn9zq9qf-rishi-tal-12s-projects.vercel.app/api/blogs/${id}`,{
             method: 'PATCH',
             body: JSON.stringify(blog),
             headers:{

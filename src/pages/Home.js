@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 const Home =()=>{
  const  [blogs,setblogs]=useState([])
 useEffect(()=>{
-    console.log("Backend URL:", process.env.REACT_APP_BACKEND_BASEURL);
+
     const fetchblogs = async()=>{ 
-   const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs`)
+   const response = await fetch(`https://mern-project-n3l6-8qn9zq9qf-rishi-tal-12s-projects.vercel.app/api/blogs`)
    const json = await response.json()
    if(response.ok){
         setblogs(json)
