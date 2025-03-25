@@ -16,7 +16,7 @@ const Update=()=>{
         }
         const  blog ={title,content,author}
 
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
             method: 'PATCH',
             body: JSON.stringify(blog),
             headers:{

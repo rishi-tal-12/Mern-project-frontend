@@ -10,7 +10,7 @@ const Createnew=()=>{
         e.preventDefault()
         const  blog ={title,content,author}
 
-         const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs`,{
+         const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs`,{
             method: 'POST',
             body: JSON.stringify(blog),
             headers:{

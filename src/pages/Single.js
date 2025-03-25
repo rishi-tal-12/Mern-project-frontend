@@ -8,7 +8,7 @@ const Single =()=>{
     const [blog,setblog]=useState({})
 useEffect(()=>{
     const fetchsingle =async()=>{
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`)
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`)
         const json = await response.json()
         if(response.ok){
             setblog(json)
@@ -17,7 +17,7 @@ useEffect(()=>{
     fetchsingle()
 }, [])
 const deleteblog=async()=>{
-        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`,{
             method:'DELETE'
         }
         )
