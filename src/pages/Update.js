@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-const BACKEND_URL = "https://mern-project-2ougbeti7-rishi-tal-12s-projects.vercel.app"
+const BACKEND_URL = "https://mern-project-e17s7bu35-rishi-tal-12s-projects.vercel.app"
 const Update=()=>{
     const { id } = useParams()
     const navigate = useNavigate()
