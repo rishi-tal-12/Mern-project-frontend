@@ -2,14 +2,13 @@ import{useEffect ,useState} from 'react'
 import {useParams} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-const BACKEND_URL="https://mern-project-g7dpwjsk9-rishi-tal-12s-projects.vercel.app"
 const Single =()=>{
     const { id } = useParams()
     const navigate = useNavigate()
     const [blog,setblog]=useState({})
 useEffect(()=>{
     const fetchsingle =async()=>{
-        const response = await fetch(`${BACKEND_URL}/api/blogs/${id}`)
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs/${id}`)
         const json = await response.json()
         if(response.ok){
             setblog(json)

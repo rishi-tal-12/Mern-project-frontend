@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-const BACKEND_URL="https://mern-project-g7dpwjsk9-rishi-tal-12s-projects.vercel.app"
 const Createnew=()=>{
     const navigate = useNavigate()
     const [title,settitle]=useState('')
@@ -11,7 +10,7 @@ const Createnew=()=>{
         e.preventDefault()
         const  blog ={title,content,author}
 
-         const response = await fetch(`${BACKEND_URL}/api/blogs`,{
+         const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs`,{
             method: 'POST',
             body: JSON.stringify(blog),
             headers:{

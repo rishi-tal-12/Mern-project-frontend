@@ -1,11 +1,10 @@
 import {useEffect,useState} from 'react'
 import {Link} from 'react-router-dom'
-const BACKEND_URL="https://mern-project-g7dpwjsk9-rishi-tal-12s-projects.vercel.app"
 const Home =()=>{
  const  [blogs,setblogs]=useState([])
 useEffect(()=>{
     const fetchblogs = async()=>{ 
-   const response = await fetch(`${BACKEND_URL}/api/blogs`)
+   const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/blogs`)
    const json = await response.json()
    if(response.ok){
         setblogs(json)
